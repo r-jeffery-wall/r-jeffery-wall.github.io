@@ -1,16 +1,16 @@
-import logo from './logo.svg';
+import Banner from './components/Banner.js';
 import './App.css';
 
 function App() {
   return (
   <>
-    <Background />
+    {/* <Background /> */}
     <Banner />
-    <Nav />
-    <About />
+    {/* <Nav /> */}
+    {/* <About />
     <Projects />
     <Contributions />
-    <Socials />
+    <Socials /> */}
   </>
   );
 }
