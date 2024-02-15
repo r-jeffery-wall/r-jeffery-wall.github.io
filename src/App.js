@@ -1,7 +1,8 @@
+import Background from './components/Background.js';
 import Banner from './components/Banner.js';
 import Nav from './components/Nav.js';
 import About from './components/About.js';
-// import Projects from './components/Projects.js';
+import Projects from './components/Projects.js';
 import Contributions  from './components/Contributions.js';
 import Socials from './components/Socials.js';
 import './App.css';
@@ -9,11 +10,11 @@ import './App.css';
 function App() {
   return (
   <>
-    {/* <Background /> */}
+    <Background />
     <Banner />
     <Nav />
     <About />
-    {/* <Projects /> */}
+    <Projects />
     <Contributions />
     <Socials />
   </>
