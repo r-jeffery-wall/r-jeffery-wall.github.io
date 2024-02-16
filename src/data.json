@@ -11,9 +11,57 @@
         {
             "name": "JavaScript",
             "logo": "../images/icons8-javascript-96.png"
+        },
+        {
+            "name": "Streamlit",
+            "logo": "../images/streamlit.png"
+        },
+        {
+            "name": "React",
+            "logo": "../images/icons8-react-48.png"
+        },
+        {
+            "name": "HTML",
+            "logo": "../images/317755_badge_html_html5_achievement_award_icon.png"
+        },
+        {
+            "name": "CSS",
+            "logo": "../images/317756_badge_css_css3_achievement_award_icon.png"
+        },
+        {
+            "name": "Bash",
+            "logo": "../images/icons8-bash-48.png"
+        },
+        {
+            "name": "Git",
+            "logo": "../images/icons8-git-48.png"
+        },
+        {
+            "name": "GitHub",
+            "logo": "../images/icons8-github-64.png"
+        },
+        {
+            "name": "Docker",
+            "logo": "../images/icons8-docker-48.png"
+        },
+        {
+            "name": "Kubernetes",
+            "logo": "../images/icons8-kubernetes-75.png"
+        },
+        {
+            "name": "Terraform",
+            "logo": "../images/icons8-terraform-75.png"
         }
     ],
-    "projects": {
-
-    }
+    "projects": [
+        {
+            "name": "SQL Query Web App",
+            "description": "At my current job I worked on a side project to build a graphical interface for our team to quickly make commonly used SQL queries to our database. This was done in Python and I began using the <a href=\"https://www.pysimplegui.org/en/latest/\" target=\"_blank\">PySimpleGUI<\/a> library for the GUI with the SQL interface handled by <a href=\"https://pypi.org/project/psycopg2\" target=\"_blank\">psycopg2< \/a>. I then developed this into a web-app by using <a href=\"https://streamlit.io\" target=\"_blank\">Streamlit<\/a>. This was then built as a Docker image and deployed as a web-app using Kubernetes and Terraform. I also worked to implement continuous integration principles to this project.",
+            "image": {
+                "path": "../images/2023-12-10_17-19.png",
+                "alt": "an image showing a streamlit interface for making SQL queries."
+            },
+            "skills": ["Python", "Postgres", "Streamlit", "Docker", "Kubernetes", "Terraform"]
+        }
+    ]
 }

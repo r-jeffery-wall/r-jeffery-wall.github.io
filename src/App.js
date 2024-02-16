@@ -16,7 +16,7 @@ function App() {
     <Banner />
     <Nav />
     <About />
-    <Projects skills={data.skills} />
+    <Projects skills={data.skills} projects={data.projects}/>
     <Contributions />
     <Socials />
   </>
