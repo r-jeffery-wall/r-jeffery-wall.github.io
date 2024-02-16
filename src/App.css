@@ -69,7 +69,7 @@ mark {
 
 /* Main Site Banner */
 .banner {
-  background: url(./images/banner_image.jpg);
+  background: url(../public/images/banner_image.jpg);
   background-size: cover;
   background-position: center;
   display: flex;

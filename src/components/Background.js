@@ -1,7 +1,7 @@
 function Background() {
     return (
-        <canvas>
-
+        <canvas id='matrix'>
+            <button id='background-off'>Toggle Background Effect</button>
         </canvas>
     )
 }

@@ -6,6 +6,8 @@ import Projects from './components/Projects.js';
 import Contributions  from './components/Contributions.js';
 import Socials from './components/Socials.js';
 import './App.css';
+import { useState } from 'react';
+import data from './data.json';
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
     <Banner />
     <Nav />
     <About />
-    <Projects />
+    <Projects skills={data.skills} />
     <Contributions />
     <Socials />
   </>

@@ -1,0 +1,19 @@
+{
+    "skills": [
+        {
+            "name": "Python",
+            "logo": "/images/4375050_logo_python_icon.png"
+        },
+        {
+            "name": "Postgres",
+            "logo": "../images/icons8-postgres-48.png"
+        },
+        {
+            "name": "JavaScript",
+            "logo": "../images/icons8-javascript-96.png"
+        }
+    ],
+    "projects": {
+
+    }
+}
