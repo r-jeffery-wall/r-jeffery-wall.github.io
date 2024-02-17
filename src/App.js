@@ -36,7 +36,7 @@ function App() {
       <About />
       <Projects skills={data.skills} projects={data.projects} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} />
       <Contributions />
-      <Socials />
+      <Socials socials={data.socials} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} />
     </>
   );
 }
