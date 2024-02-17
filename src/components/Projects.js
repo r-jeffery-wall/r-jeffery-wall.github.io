@@ -11,10 +11,10 @@ function Projects( props ) {
                     <h2 class="section-heading">Skills</h2>
                     <p>Click on any of the below skills to filter the projects list.</p>
                     <ul class='skills-list'>
-                    {props.skills.map(skill => <Skill name={skill.name} imageSrc={skill.logo} />)}
+                    {props.skills.map(skill => <Skill name={skill} />)}
                     </ul>
                 </div>
-                {props.projects.map(project => <Project name={project.name} url={project.url} text={project.description} image={project.image} />)}
+                {props.projects.map(project => <Project name={project.name} url={project.url} text={project.description} image={project.image} skills={project.skills} />)}
             </section>
     )
 }

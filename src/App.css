@@ -163,6 +163,14 @@ nav {
   margin-bottom: 2em;
 }
 
+.project-container .skills-list img {
+  border: none;
+  margin: 0;
+  max-width: none;
+  width: 48px !important;
+  height: 48px !important;
+}
+
 .img-right {
   margin-left: 2rem;
 }
