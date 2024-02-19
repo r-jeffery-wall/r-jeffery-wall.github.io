@@ -5,9 +5,11 @@ import Projects from './components/Projects.js';
 import Contributions from './components/Contributions.js';
 import Socials from './components/Socials.js';
 import './App.css';
+import { useState } from 'react';
 import data from './data.json';
 
 function App() {
+  const [filters, setFilters] = useState(data.skills);
 
   function sliderHover(element) {
     let target = element.nextSibling;
@@ -25,12 +27,20 @@ function App() {
     }, 1000)
   }
 
+  function updateFilters(name) {
+    if (filters === data.skills) {
+      setFilters(() => [name]);
+    } else {
+      setFilters((prev) => [...prev, name]);
+    }
+  }
+
   return (
     <>
       <Banner />
       <Nav />
       <About />
-      <Projects skills={data.skills} projects={data.projects} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} />
+      <Projects skills={data.skills} projects={data.projects} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} filters={filters} updateFilters={updateFilters}/>
       <Contributions />
       <Socials socials={data.socials} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} />
     </>

@@ -1,8 +1,8 @@
-function Skill( props ) {
+function Skill( { name, sliderHover, sliderHoverOff, filtered, updateFilters } ) {
     return (
-        <li> 
-            <img src={`../images/${props.name}.png`} alt={`${props.name} logo`} class="lang-logo img-hover slider" id={props.name} onMouseOver={event => props.sliderHover(event.target)} onMouseOut={event => props.sliderHoverOff(event.target)} />
-            <p class="slider-text">{props.name}</p>
+        <li className={filtered ? '' : 'translucent'}  onClick={() => updateFilters(name)}> 
+            <img src={`../images/${name}.png`} alt={`${name} logo`} class="lang-logo img-hover slider" id={name} onMouseOver={event => sliderHover(event.target)} onMouseOut={event => sliderHoverOff(event.target)} />
+            <p class="slider-text">{name}</p>
         </li> 
     )
 }
