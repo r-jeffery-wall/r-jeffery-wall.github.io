@@ -1,5 +1,6 @@
 /* Global Styles */
-html, body {
+html,
+body {
   width: 100%;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -18,7 +19,7 @@ ul {
   list-style: none;
 }
 
-a { 
+a {
   color: grey;
 }
 
@@ -153,14 +154,23 @@ nav {
   justify-content: space-between;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .project-container img {
   max-width: 50%;
   max-height: 100%;
   display: block;
   border: 4px solid black;
   border-radius: 15px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 2em 0;
+  margin-right: 2em;
+}
+
+.reverse img {
+  margin-right: 0;
+  margin-left: 2em;
 }
 
 .project-container .skills-list img {
@@ -169,14 +179,6 @@ nav {
   max-width: none;
   width: 48px !important;
   height: 48px !important;
-}
-
-.img-right {
-  margin-left: 2rem;
-}
-
-.img-left {
-  margin-right: 2rem;
 }
 
 .external-projects {
@@ -235,76 +237,78 @@ footer {
 /* Media Queries */
 @media screen and (max-width: 1000px) {
   .content-container {
-      width: 95%;
+    width: 95%;
   }
 
   nav {
-      font-size: 2.5vw;
+    font-size: 2.5vw;
   }
-  
+
   .grid-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-container img {
-      max-width: 100%;
+    max-width: 100%;
   }
-  
+
   html {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .social img {
-      width: 50px;
-      height: 50px;
+    width: 50px;
+    height: 50px;
   }
 
   .lang-logo {
-      width: 50px;
-      height: 50px;
+    width: 50px;
+    height: 50px;
   }
 }
 
-@media screen  and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .social-links {
-      justify-content: space-between;
-      font-size: 0.8rem;
+    justify-content: space-between;
+    font-size: 0.8rem;
   }
 
   .social-img {
-      width: 48px;
-      height: 48px;
+    width: 48px;
+    height: 48px;
   }
 
   .social-links li {
-      margin: 0 .4rem;
+    margin: 0 .4rem;
   }
 
   #background-off {
-      transform: scale(0.7);
+    transform: scale(0.7);
   }
 
   .slider-text {
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
   }
 }
 
-@media (hover: none) { /* Sliding labels will be shown if device has no hover capability. */
+@media (hover: none) {
+
+  /* Sliding labels will be shown if device has no hover capability. */
   .slider-text {
-      bottom: 0;
-      opacity: 100;
+    bottom: 0;
+    opacity: 100;
   }
 }

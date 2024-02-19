@@ -14,7 +14,7 @@ function Projects(props) {
                     {props.skills.map(skill => <Skill name={skill} sliderHover={props.sliderHover} sliderHoverOff={props.sliderHoverOff} />)}
                 </ul>
             </div>
-            {props.projects.map(project => <Project name={project.name} url={project.url} text={project.description} image={project.image} skills={project.skills} />)}
+            {props.projects.map((project, index) => <Project name={project.name} url={project.url} text={project.description} image={project.image} skills={project.skills} alignment={index % 2 === 0 ? 'left' : 'right'} />)}
             <div class="content-container">
                 <h2 class="section-heading">More Projects</h2>
                 <p>Below you can find some other places where you can browse more projects that I have worked on.</p>
