@@ -68,6 +68,14 @@ mark {
   color: navy;
 }
 
+button {
+  border-radius: 15px;
+}
+
+.translucent {
+  opacity: 0.5;
+}
+
 /* Main Site Banner */
 .banner {
   background: url(../public/images/banner_image.jpg);
@@ -139,6 +147,10 @@ nav {
   justify-content: center;
   place-items: center;
   padding: 1rem;
+}
+
+#clear-filters {
+  margin-bottom: 1rem;
 }
 
 .lang-logo {
@@ -214,7 +226,6 @@ nav {
   left: 0;
   top: 0;
   z-index: 7;
-  border-radius: 15px;
 }
 
 /* Footer */

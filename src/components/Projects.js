@@ -11,8 +11,9 @@ function Projects(props) {
                 <h2 class="section-heading">Skills</h2>
                 <p>Click on any of the below skills to filter the projects list.</p>
                 <ul class='skills-list'>
-                    {props.skills.map(skill => <Skill name={skill} sliderHover={props.sliderHover} sliderHoverOff={props.sliderHoverOff} filtered={skill in props.filters ? true : false} updateFilters={props.updateFilters} />)}
+                    {props.skills.map(skill => <Skill name={skill} sliderHover={props.sliderHover} sliderHoverOff={props.sliderHoverOff} filtered={props.filters.includes(skill) ? true : false} updateFilters={props.updateFilters} />)}
                 </ul>
+                <button id='clear-filters' onClick={() => props.clearFilters()}>Clear Filters</button>
             </div>
             {props.projects.filter(project => {
                 for (const skill of project.skills) {

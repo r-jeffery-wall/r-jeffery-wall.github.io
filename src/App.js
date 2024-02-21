@@ -37,12 +37,16 @@ function App() {
     }
   }
 
+  function clearFilters() {
+    setFilters(data.skills);
+  }
+
   return (
     <>
       <Banner />
       <Nav />
       <About />
-      <Projects skills={data.skills} projects={data.projects} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} filters={filters} updateFilters={updateFilters}/>
+      <Projects skills={data.skills} projects={data.projects} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} filters={filters} updateFilters={updateFilters} clearFilters={clearFilters} />
       <Contributions />
       <Socials socials={data.socials} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} />
     </>

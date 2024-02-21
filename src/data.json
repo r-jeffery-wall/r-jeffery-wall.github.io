@@ -9,7 +9,7 @@
                 "path": "../images/2023-12-10_17-19.png",
                 "alt": "an image showing a streamlit interface for making SQL queries."
             },
-            "skills": ["Python", "Postgres", "Streamlit", "Docker", "Kubernetes", "Terraform"]
+            "skills": ["Python", "Postgres", "Streamlit", "Docker", "Kubernetes", "Terraform", "Git", "GitHub"]
         },
         {
             "name": "Transport Dashboard",
@@ -19,7 +19,7 @@
                 "path": "../images/transport_dashboard.jpg",
                 "alt": "the transport dashboard, displaying upcoming departure information for four key stations in London."
             },
-            "skills": ["Python", "Bash"]
+            "skills": ["Python", "Bash", "Git", "GitHub"]
         },
         {
             "name": "Mismatched Quote Generator",
@@ -39,7 +39,7 @@
                 "path": "../images/jamming.png",
                 "alt": "A screenshot showing the Jamming web app frontend.'"
             },
-            "skills": ["JavaScript", "React", "HTML", "CSS"]
+            "skills": ["JavaScript", "React", "HTML", "CSS", "Git", "GitHub"]
         }        
     ],
     "socials": [
