@@ -30,6 +30,8 @@ function App() {
   function updateFilters(name) {
     if (filters === data.skills) {
       setFilters(() => [name]);
+    } else if (filters.includes(name)) {
+      setFilters((prev) => prev.filter((skill) => skill !== name));
     } else {
       setFilters((prev) => [...prev, name]);
     }
