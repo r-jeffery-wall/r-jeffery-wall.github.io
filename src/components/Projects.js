@@ -11,10 +11,16 @@ function Projects(props) {
                 <h2 class="section-heading">Skills</h2>
                 <p>Click on any of the below skills to filter the projects list.</p>
                 <ul class='skills-list'>
-                    {props.skills.map(skill => <Skill name={skill} sliderHover={props.sliderHover} sliderHoverOff={props.sliderHoverOff} filtered={skill in props.filters ? true : false} updateFilters={props.updateFilters}/>)}
+                    {props.skills.map(skill => <Skill name={skill} sliderHover={props.sliderHover} sliderHoverOff={props.sliderHoverOff} filtered={skill in props.filters ? true : false} updateFilters={props.updateFilters} />)}
                 </ul>
             </div>
-            {props.projects.map((project, index) => <Project name={project.name} url={project.url} text={project.description} image={project.image} skills={project.skills} alignment={index % 2 === 0 ? 'left' : 'right'} />)}
+            {props.projects.filter(project => {
+                for (const skill of project.skills) {
+                    if (props.filters.includes(skill)) {
+                        return true
+                    }
+                }
+            }).map((project, index) => <Project name={project.name} url={project.url} text={project.description} image={project.image} skills={project.skills} alignment={index % 2 === 0 ? 'left' : 'right'} />)}
             <div class="content-container">
                 <h2 class="section-heading">More Projects</h2>
                 <p>Below you can find some other places where you can browse more projects that I have worked on.</p>
