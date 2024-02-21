@@ -31,7 +31,11 @@ function App() {
     if (filters === data.skills) {
       setFilters(() => [name]);
     } else if (filters.includes(name)) {
-      setFilters((prev) => prev.filter((skill) => skill !== name));
+      if (filters.length === 1) {
+        clearFilters();
+      } else {
+        setFilters((prev) => prev.filter((skill) => skill !== name));
+      }
     } else {
       setFilters((prev) => [...prev, name]);
     }
