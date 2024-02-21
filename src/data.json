@@ -40,7 +40,27 @@
                 "alt": "A screenshot showing the Jamming web app frontend.'"
             },
             "skills": ["JavaScript", "React", "HTML", "CSS", "Git", "GitHub"]
-        }        
+        },
+        {
+            "name": "Markdown Generator",
+            "url": "https://codepen.io/rowjw/full/JjLmdYq",
+            "description": "I built this markdown generator using a previous version of React as part of the FreeCodeCamp Front End Development Libraries Certification. Markdown entered on the left hand side of the screen will be rendered on the right.",
+            "image": {
+                "path": "../images/Screenshot from 2024-02-21 20-14-22.png",
+                "alt": "A screenshot showing the markdown generator with some template markdown text.'"
+            },
+            "skills": ["JavaScript", "React", "HTML", "CSS", "Git", "GitHub"]
+        },
+        {
+            "name": "React Calculator",
+            "url": "https://codepen.io/rowjw/full/wvjEvro",
+            "description": "This is a simple JavaScript calculator that uses React (a previous version). This project was part of the FreeCodeCamp Front End Development Libraries Certification.",
+            "image": {
+                "path": "../images/Screenshot from 2024-02-21 20-19-48.png",
+                "alt": "A screenshot showing the calculator webapp.'"
+            },
+            "skills": ["JavaScript", "React", "HTML", "CSS", "Git", "GitHub"]
+        }
     ],
     "socials": [
         {
