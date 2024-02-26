@@ -5,11 +5,12 @@ import Projects from './components/Projects.js';
 import Contributions from './components/Contributions.js';
 import Socials from './components/Socials.js';
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import data from './data.json';
 
 function App() {
   const [filters, setFilters] = useState(data.skills);
+  const [bannerVisible, setBannerVisible ] = useState(true);
 
   function sliderHover(element) {
     let target = element.nextSibling;
@@ -45,10 +46,25 @@ function App() {
     setFilters(data.skills);
   }
 
+  function isVisible(element) {
+    if (window.scrollY > element.offsetHeight) {
+      setBannerVisible(false);
+    } else {
+      setBannerVisible(true);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => isVisible(document.getElementById('main-banner')));
+    return () => {
+      document.removeEventListener("scroll", () => isVisible(document.getElementById('main-banner')));
+    }
+  }, [])
+
   return (
     <>
       <Banner />
-      <Nav />
+      <Nav bannerVisible={bannerVisible} />
       <About />
       <Projects skills={data.skills} projects={data.projects} sliderHover={sliderHover} sliderHoverOff={sliderHoverOff} filters={filters} updateFilters={updateFilters} clearFilters={clearFilters} />
       <Contributions />
