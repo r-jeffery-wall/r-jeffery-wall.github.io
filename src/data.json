@@ -1,5 +1,5 @@
 {
-    "skills": [ "Python", "Postgres", "JavaScript", "Streamlit", "React", "HTML", "CSS", "Bash", "Git", "GitHub", "Docker", "Kubernetes", "Terraform"],
+    "skills": [ "Python", "Postgres", "JavaScript", "Streamlit", "React", "Redux", "HTML", "CSS", "Bash", "Git", "GitHub", "Docker", "Kubernetes", "Terraform"],
     "projects": [
         {
             "name": "SQL Query Web App",
@@ -60,6 +60,16 @@
                 "alt": "A screenshot showing the calculator webapp.'"
             },
             "skills": ["JavaScript", "React", "HTML", "CSS", "Git", "GitHub"]
+        },
+        {
+            "name": "React-Redux Flashcards",
+            "url": "https://codecademy-flashcards-two.vercel.app",
+            "description": "Built from a challenge project on Codecademy, this app allows users to create topics and assign quizzes and flashcards to them. It is built using React, Redux, and React-router.",
+            "image": {
+                "path": "../images/Screenshot from 2024-03-23 11-57-01.png",
+                "alt": "A screenshot showing the flashcard web-app."
+            },
+            "skills": ["JavaScript", "React", "Redux", "Git", "GitHub"]
         }
     ],
     "socials": [
