@@ -70,6 +70,16 @@
                 "alt": "A screenshot showing the flashcard web-app."
             },
             "skills": ["JavaScript", "React", "Redux", "Git", "GitHub"]
+        },
+        {
+            "name": "BMI Calculator",
+            "url": "https://frontend-mentor-bmi-calculator.vercel.app",
+            "description": "This project came from Frontend Mentor. I had to build this BMI Calculator app, trying to match the provided design as closely as property. I used a React component for the actual calculator. I also honed my skills with CSS Grid and tried my hand at using SASS for the CSS for the first time.",  
+            "image": {
+                "path": "../images/Screenshot from 2024-04-01 17-31-05.png",
+                "alt": "A screenshot showing the BMI Calculator app."
+            },
+            "skills": ["JavaScript", "React", "CSS", "Git", "GitHub"]
         }
     ],
     "socials": [
