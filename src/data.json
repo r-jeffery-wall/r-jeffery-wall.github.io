@@ -1,6 +1,16 @@
 {
-    "skills": [ "Python", "Postgres", "JavaScript", "Streamlit", "React", "Redux", "HTML", "CSS", "Bash", "Git", "GitHub", "Docker", "Kubernetes", "Terraform"],
+    "skills": [ "Python", "Postgres", "JavaScript", "Streamlit", "React", "Redux", "HTML", "CSS", "Bootstrap", "Bash", "Git", "GitHub", "Docker", "Kubernetes", "Terraform"],
     "projects": [
+        {
+            "name": "ReadOnlyReddit",
+            "url": "https://rowanjefferywall.com/codecademy-reddit-client/",
+            "description": "This app was built from a Codecademy portfolio project. It is a React-Redux app that interfaces with the Reddit api to deliver posts and comments to the user, as well as lists of Subreddits. I used Bootstrap for the first time with this project and found that it streamlined my layout and styling workflow. I enjoyed building reducers using Redux toolkit and am really proud of the final result. There were some things I didn't have time to fully implement, such as routing, but I'd like to revist and improve this one.",
+            "image": {
+                "path": "../images/ReadOnlyReddit.png",
+                "alt": "A screenshot from the ReadOnlyReddit app."
+            },
+            "skills": ["React", "Redux", "Bootstrap", "JavaScript"]
+        },
         {
             "name": "SQL Query Web App",
             "url": "",
