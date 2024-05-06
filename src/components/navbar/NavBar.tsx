@@ -1,6 +1,5 @@
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import profileIcon from '../../assets/profileIcon.jpeg'
-
+import profileIcon from '../../assets/profileIcon.jpeg';
 
 export const NavBar: React.FC = () => {
   return (

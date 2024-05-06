@@ -1,25 +1,35 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
 
+export interface SocialInterface {
+    name: string;
+    url: string;
+    icon: string;
+}
+
 const socialsSlice = createSlice({
     name: "socials",
     initialState: // Dummy values
         [
             {
-                "name": "Email",
-                "url": "mailto: rowjw97@gmail.com" 
+                name: "Email",
+                url: "mailto: rowjw97@gmail.com",
+                icon:  "fa-solid fa-envelope"
             },
             {
-                "name": "GitHub",
-                "url": "https://github.com/r-jeffery-wall" 
+                name: "GitHub",
+                url: "https://github.com/r-jeffery-wall" ,
+                icon:  "fa-brands fa-github"
             },
             {
-                "name": "Instagram",
-                "url": "https://www.instagram.com/rowphotojw/" 
+                name: "Instagram",
+                url: "https://www.instagram.com/rowphotojw/", 
+                icon:  "fa-brands fa-instagram"
             },
             {
-                "name": "LinkedIn",
-                "url": "https://www.linkedin.com/in/rowan-jeffery-wall-822260257/" 
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/rowan-jeffery-wall-822260257/" ,
+                icon:  "fa-brands fa-linkedin"
             }
         ], 
     reducers: {}
