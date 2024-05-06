@@ -11,4 +11,11 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
+  #site-hero {
+    background-image: url(./assets/banner_image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    -webkit-text-stroke: 1px black;
+  }

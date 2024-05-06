@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <NavBar />
-      <div className="container">
+      <div className="container-fluid p-0">
         <Routes>
           <Route path='/' element={ <Home /> } />
         </Routes>
