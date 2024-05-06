@@ -9,7 +9,7 @@ export const NavBar: React.FC = () => {
           <div style={{maxWidth: '150px', minWidth: '64px'}}>
           <img  src={profileIcon} className='img-fluid border-secondary border rounded-circle border-2' /> 
           </div>
-          <div className="d-flex flex-column align-items-center ms-3">
+          <div className="d-flex flex-column align-items-center ms-3 young-serif-regular">
             <h1 className="fs-3 fw-bold">Rowan Jeffery-Wall</h1>
             <h2 className="fs-5">Full-Stack Developer</h2>
           </div>
