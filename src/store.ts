@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import socialsReducer from './features/socials/SocialsSlice';
+import skillsReducer from './features/skills/SkillsSlice';
 
 export const store = configureStore({
   reducer: {
-    socials: socialsReducer 
+    socials: socialsReducer,
+    skills: skillsReducer 
   },
 })
 
