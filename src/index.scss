@@ -1,4 +1,5 @@
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: white;
 }
 
@@ -8,33 +9,37 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .img-hover {
-    transition: all 0.5s;
-  }
+  transition: all 0.5s;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+}
+
+.translucent {
   
-  .img-hover:hover {
-    transform: scale(1.1);
-  }
+}
 
-  .young-serif-regular {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.young-serif-regular {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  #site-hero {
-    font-weight: 800;
-    background-image: url(./assets/banner_image.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 75vh;
-    h1 {
-      font-size: 46px;
-    }
+#site-hero {
+  font-weight: 800;
+  background-image: url(./assets/banner_image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  h1 {
+    font-size: 46px;
   }
+}
