@@ -1,3 +1,19 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: white;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-bg: grey;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .img-hover {
     transition: all 0.5s;
   }
@@ -13,9 +29,12 @@
   }
 
   #site-hero {
+    font-weight: 800;
     background-image: url(./assets/banner_image.jpg);
     background-size: cover;
     background-position: center;
     height: 75vh;
-    -webkit-text-stroke: 1px black;
+    h1 {
+      font-size: 46px;
+    }
   }
