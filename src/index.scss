@@ -23,8 +23,10 @@ body {
   transform: scale(1.1);
 }
 
-.translucent {
-  
+#skills-list {
+  .img-hover:hover {
+    background-color: rgba(199, 199, 199, 0.651);
+  }
 }
 
 .young-serif-regular {
