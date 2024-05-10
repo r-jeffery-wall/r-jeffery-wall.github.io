@@ -38,7 +38,7 @@ body {
 .about-section {
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 80vh;
 }
 
 #site-hero {
@@ -51,4 +51,8 @@ body {
 
 #about {
   background-image: url(./assets/AboutBackground.JPG);
+}
+
+#location {
+  background-image: url(./assets/London.JPG);
 }

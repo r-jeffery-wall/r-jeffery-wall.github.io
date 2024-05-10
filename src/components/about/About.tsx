@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="p-0 m-0 text-center about-section d-flex flex-column justify-content-center align-items-center text-white text-center fw-bold border border-black border-3"
+      className="p-0 m-0 text-center about-section d-flex flex-column justify-content-center align-items-center text-white text-center fw-bold border-top border-bottom border-black border-3"
     >
       <h2 className="mb-5">Hi 👋, I'm Rowan.</h2>
       <div className="w-75">
