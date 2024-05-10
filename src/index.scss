@@ -35,13 +35,20 @@ body {
   font-style: normal;
 }
 
-#site-hero {
-  font-weight: 800;
-  background-image: url(./assets/banner_image.jpg);
+.about-section {
   background-size: cover;
   background-position: center;
   height: 75vh;
+}
+
+#site-hero {
+  font-weight: 800;
+  background-image: url(./assets/banner_image.jpg);
   h1 {
     font-size: 46px;
   }
+}
+
+#about {
+  background-image: url(./assets/AboutBackground.JPG);
 }
