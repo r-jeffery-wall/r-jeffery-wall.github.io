@@ -1,8 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
 
-export interface SkillInterface {}
-
 const skillsSlice = createSlice({
   name: 'skills',
   initialState: [ //Dummy values

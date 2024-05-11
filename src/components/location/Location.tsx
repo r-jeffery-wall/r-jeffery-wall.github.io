@@ -1,4 +1,4 @@
-export const Location = () => {
+export const Location: React.FC = () => {
   return (
     <div
       id="location"
