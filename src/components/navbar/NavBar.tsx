@@ -1,4 +1,5 @@
-import { Navbar, Container, Nav } from 'react-bootstrap'
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import { NavLink  } from 'react-router-dom';
 import profileIcon from '../../assets/profileIcon.jpeg';
 
 export const NavBar: React.FC = () => {
@@ -18,13 +19,13 @@ export const NavBar: React.FC = () => {
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end fs-5'>
           <Nav variant="pills" defaultActiveKey="/">
             <Nav.Item>
-              <Nav.Link href="/">About</Nav.Link>
+              <NavLink to="/" className="nav-link" >About</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/projects">Projects</Nav.Link>
+              <NavLink to="/projects" className="nav-link" >Projects</NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/contributions">Contributions</Nav.Link>
+              <NavLink to="/contributions" className="nav-link" >Contributions</NavLink>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
