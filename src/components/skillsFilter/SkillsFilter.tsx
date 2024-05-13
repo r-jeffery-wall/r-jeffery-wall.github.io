@@ -11,7 +11,7 @@ export const SkillsFilter: React.FC = () => {
             <h2>Skills</h2>
             <p>Click on a technology to filter projects.</p>
             <SkillsList filter={true} />
-            <Button variant="primary" onClick={() => dispatch(clearFilters())}>Clear Filters</Button>
+            <Button className="my-3" variant="primary" onClick={() => dispatch(clearFilters())}>Clear Filters</Button>
         </div>
     )
 }
