@@ -46,8 +46,7 @@ const initialState: ProjectsState = {
         'Streamlit',
         'Docker',
         'Kubernetes',
-        'Terraform',
-        'Git',
+        'Terraform'
       ],
     },
     {
