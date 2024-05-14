@@ -5,15 +5,15 @@ const skillsSlice = createSlice({
   name: 'skills',
   initialState: [
     //Dummy values
-    'Python',
-    'Postgres',
     'JavaScript',
     'TypeScript',
-    'Streamlit',
     'React',
     'Redux',
     'HTML',
     'CSS',
+    'Python',
+    'Postgres',
+    'Streamlit',
     'Bootstrap',
     'Bash',
     'Git',
