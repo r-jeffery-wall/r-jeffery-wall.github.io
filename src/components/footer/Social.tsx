@@ -1,11 +1,7 @@
-export const Social = ({
+export const Social: React.FC<{ name: string; url: string; icon: string }> = ({
   name,
   url,
   icon,
-}: {
-  name: string
-  url: string
-  icon: string
 }) => {
   return (
     <li key={name} className="m-2">

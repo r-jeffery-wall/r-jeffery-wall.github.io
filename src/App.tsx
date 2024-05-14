@@ -12,8 +12,8 @@ const App: React.FC = () => {
       <NavBar />
       <div className="container-fluid p-0">
         <Routes>
-          <Route path='/' element={ <Home /> } />
-          <Route path='/projects' element={ <Projects /> } />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
       <Footer />

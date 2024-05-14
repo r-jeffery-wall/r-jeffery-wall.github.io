@@ -1,13 +1,10 @@
 import { useDispatch } from 'react-redux'
 import { updateFilters } from '../../features/projects/projectsSlice'
 
-export const FilterableSkill = ({
-  skill,
-  filtered,
-}: {
+export const FilterableSkill: React.FC<{
   skill: string
   filtered: boolean
-}) => {
+}> = ({ skill, filtered }) => {
   const dispatch = useDispatch()
   const image = require(`../../assets/${skill}.png`)
 
@@ -15,7 +12,8 @@ export const FilterableSkill = ({
     <li
       key={skill}
       className={
-        'm-2 p-2 col-1 img-hover rounded ' + (filtered ? 'fw-bold' : 'translucent')
+        'm-2 p-2 col-1 img-hover rounded ' +
+        (filtered ? 'fw-bold' : 'translucent')
       }
       onClick={() => dispatch(updateFilters(skill))}
     >

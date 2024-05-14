@@ -7,14 +7,14 @@ interface ProjectsState {
 }
 
 export interface ProjectInterface {
-  name: string;
-  url: string;
-  description: string;
+  name: string
+  url: string
+  description: string
   image: {
-    path: string;
+    path: string
     alt: string
-  };
-  skills: string[];
+  }
+  skills: string[]
 }
 
 const initialState: ProjectsState = {
@@ -46,7 +46,7 @@ const initialState: ProjectsState = {
         'Streamlit',
         'Docker',
         'Kubernetes',
-        'Terraform'
+        'Terraform',
       ],
     },
     {
@@ -59,8 +59,7 @@ const initialState: ProjectsState = {
         alt:
           'the transport dashboard, displaying upcoming departure information for four key stations in London.',
       },
-      skills: ['Python', 'Bash', 'Git'
-      ],
+      skills: ['Python', 'Bash', 'Git'],
     },
     {
       name: 'Mismatched Quote Generator',

@@ -4,9 +4,9 @@ import { Skill } from './Skill'
 import { FilterableSkill } from './FilterableSkill'
 import { selectFilters } from '../../features/projects/projectsSlice'
 
-export const SkillsList = ({ filter }: { filter: boolean }) => {
+export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
   const skills = useSelector(selectSkills)
-  const filters = useSelector(selectFilters);
+  const filters = useSelector(selectFilters)
 
   if (filter) {
     return (
@@ -15,7 +15,12 @@ export const SkillsList = ({ filter }: { filter: boolean }) => {
         id="skills-list"
       >
         {skills.map((skill) => (
-          <FilterableSkill skill={skill} filtered={filters.includes(skill) || filters.length == 0 ? true : false} />
+          <FilterableSkill
+            skill={skill}
+            filtered={
+              filters.includes(skill) || filters.length == 0 ? true : false
+            }
+          />
         ))}
       </ul>
     )

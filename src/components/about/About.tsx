@@ -4,8 +4,11 @@ export const About: React.FC = () => {
       id="about"
       className="p-0 m-0 text-center about-section d-flex flex-column justify-content-center align-items-center text-white text-center fw-bold border-top border-bottom border-black border-3"
     >
-      <div className="w-75 border border-secondary rounded p-2" style={{backgroundColor: "rgba(199, 199, 199, 0.651)"}}>
-      <h2 className="mb-5">Hi 👋, I'm Rowan.</h2>
+      <div
+        className="w-75 border border-secondary rounded p-2"
+        style={{ backgroundColor: 'rgba(199, 199, 199, 0.651)' }}
+      >
+        <h2 className="mb-5">Hi 👋, I'm Rowan.</h2>
         <p>
           Although I have always been interested in technology and coding, my
           coding journey began in earnest two years ago. I began with Python so

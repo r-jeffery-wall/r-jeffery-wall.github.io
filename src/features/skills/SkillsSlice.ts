@@ -3,7 +3,8 @@ import { RootState } from '../../store'
 
 const skillsSlice = createSlice({
   name: 'skills',
-  initialState: [ //Dummy values
+  initialState: [
+    //Dummy values
     'Python',
     'Postgres',
     'JavaScript',
@@ -19,7 +20,7 @@ const skillsSlice = createSlice({
     'Docker',
     'Kubernetes',
     'Terraform',
-  ], 
+  ],
   reducers: {},
 })
 
