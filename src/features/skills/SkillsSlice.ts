@@ -7,6 +7,7 @@ const skillsSlice = createSlice({
     'Python',
     'Postgres',
     'JavaScript',
+    'TypeScript',
     'Streamlit',
     'React',
     'Redux',
