@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { NavBar } from './components/navbar/NavBar'
 import { Footer } from './components/footer/Footer'
 import { Projects } from './pages/Projects'
+import { Contributions } from './pages/Contributions'
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path='/contributions' element={<Contributions />} />
         </Routes>
       </div>
       <Footer />
