@@ -38,20 +38,39 @@ export const GitHubInfo: React.FC = () => {
         <figure>
           <img
             id="github-contributions"
+            className="bg-dark-subtle border border-black"
             src="http://ghchart.rshah.org/r-jeffery-wall"
             alt="r-jeffery-wall's Github chart"
           />
           <figcaption>My GitHub contributions.</figcaption>
         </figure>
-        <div>
-            <div>
-                <h5>Public Repos: </h5>
-                <p>{profile.public_repos.toString()}</p>
-            </div>
-            <div>
-                <h5>Followers: </h5>
-                <p>{profile.followers.toString()}</p>
-            </div>
+        <div className="d-flex justify-content-center align-items-center">
+          <img
+            className="rounded-circle border border-secondary me-3"
+            style={{ width: '75px', height: '75px' }}
+            src={profile.avatar_url}
+            alt="gitHub profile picture"
+          />
+          <h5>
+            <a
+              href={profile.html_url}
+              target="_blank"
+              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"
+            >
+              {profile.login}
+            </a>
+          </h5>
+        </div>
+        <p className="mt-2">{profile.bio}</p>
+        <div className="d-flex justify-content-around align-items-center">
+          <div>
+            <h5>Public Repos: </h5>
+            <p>{profile.public_repos.toString()}</p>
+          </div>
+          <div>
+            <h5>Followers: </h5>
+            <p>{profile.followers.toString()}</p>
+          </div>
         </div>
       </div>
     )
