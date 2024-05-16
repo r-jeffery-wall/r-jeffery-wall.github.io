@@ -11,50 +11,74 @@ export const getProfileInfo = createAsyncThunk(
   }
 )
 
+export const getReposForUser = createAsyncThunk(
+  'gitHub/getReposForUser',
+  async (username: string) => {
+    // Gets a user's gitHub repos.
+    const response = await fetch(`https://api.github.com/users/${username}/repos`)
+    const json = await response.json()
+    return json
+  }
+)
+
 interface GitHubInterface {
   profileLoading: boolean
   profileLoadFailed: boolean
+  reposLoading: boolean
+  reposLoadFailed: boolean
   profile: ProfileInterface
+  repos: RepoInterface[]
+}
+
+export interface RepoInterface {
+  name: string
+  full_name: string
+  html_url: string
+  description: string
+  created_at: string
+  updated_at: string
 }
 
 interface ProfileInterface {
-    login: string;
-    id: Number;
-    node_id: string;
-    avatar_url: string;
-    gravatar_id: string;
-    url: string;
-    html_url: string;
-    followers_url: string;
-    following_url: string;
-    gists_url: string;
-    starred_url: string;
-    subscriptions_url: string;
-    organizations_url: string;
-    repos_url: string;
-    events_url: string;
-    received_events_url: string;
-    type: string;
-    site_admin: boolean;
-    name: any;
-    company: any;
-    blog: any;
-    location: any;
-    email: any;
-    hireable: any;
-    bio: any;
-    twitter_username: any;
-    public_repos: Number;
-    public_gists: Number;
-    followers: Number;
-    following: Number;
-    created_at: any;
-    updated_at: any;
+  login: string
+  id: Number
+  node_id: string
+  avatar_url: string
+  gravatar_id: string
+  url: string
+  html_url: string
+  followers_url: string
+  following_url: string
+  gists_url: string
+  starred_url: string
+  subscriptions_url: string
+  organizations_url: string
+  repos_url: string
+  events_url: string
+  received_events_url: string
+  type: string
+  site_admin: boolean
+  name: any
+  company: any
+  blog: any
+  location: any
+  email: any
+  hireable: any
+  bio: any
+  twitter_username: any
+  public_repos: Number
+  public_gists: Number
+  followers: Number
+  following: Number
+  created_at: any
+  updated_at: any
 }
 
 const initialState: GitHubInterface = {
   profileLoading: false,
   profileLoadFailed: false,
+  reposLoading: false,
+  reposLoadFailed: false,
   profile: {
     login: '',
     id: 0,
@@ -87,8 +111,9 @@ const initialState: GitHubInterface = {
     followers: 0,
     following: 0,
     created_at: '',
-    updated_at: ''
-}
+    updated_at: '',
+  },
+  repos: [],
 }
 
 const GitHubSlice = createSlice({
@@ -109,6 +134,19 @@ const GitHubSlice = createSlice({
       state.profileLoading = false
       state.profileLoadFailed = true
     })
+    builder.addCase(getReposForUser.pending, (state) => {
+      state.reposLoading = true
+      state.reposLoadFailed = false
+    })
+    builder.addCase(getReposForUser.fulfilled, (state, action) => {
+      state.reposLoading = false
+      state.reposLoadFailed = false
+      state.repos = action.payload
+    })
+    builder.addCase(getReposForUser.rejected, (state) => {
+      state.reposLoading = false
+      state.reposLoadFailed = true
+    })
   },
 })
 
@@ -116,5 +154,9 @@ export const isProfileLoading = (state: RootState) =>
   state.gitHub.profileLoading
 export const isProfileLoadFailed = (state: RootState) =>
   state.gitHub.profileLoadFailed
+export const isReposLoading = (state: RootState) => state.gitHub.reposLoading
+export const isReposLoadFailed = (state: RootState) =>
+  state.gitHub.reposLoadFailed
+export const selectRepos = (state: RootState) => state.gitHub.repos
 export const selectProfile = (state: RootState) => state.gitHub.profile
 export default GitHubSlice.reducer

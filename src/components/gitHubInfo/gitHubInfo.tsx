@@ -33,7 +33,7 @@ export const GitHubInfo: React.FC = () => {
     )
   } else {
     return (
-      <div className="bg-secondary border border-black rounded w-75 m-auto text-white">
+      <div className="bg-secondary border border-black rounded w-75 m-auto text-white my-3">
         <h2>GitHub Stats</h2>
         <figure>
           <img
