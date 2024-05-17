@@ -1,6 +1,6 @@
 {
-  "short_name": "Rowan Jeffery-Wall",
-  "name": "Rowan Jeffery-Wall's Personal Portfolio Website.",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,12 +9,12 @@
     },
     {
       "src": "logo192.jpg",
-      "type": "image/jpg",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "logo512.jpg",
-      "type": "image/jpg",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
