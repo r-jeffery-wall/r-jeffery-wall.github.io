@@ -6,8 +6,7 @@ export const Skill: React.FC<{ skill: string }> = ({ skill }) => {
       <img
         src={image}
         alt={`${skill} logo.`}
-        className="mb-2"
-        style={{ width: '50px', height: '50px' }}
+        className="mb-2 skill-img"
       />
       <p>{skill}</p>
     </li>

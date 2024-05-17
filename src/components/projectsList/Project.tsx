@@ -10,7 +10,7 @@ export const Project: React.FC<ProjectInterface> = ({
 }) => {
   const imageSrc = require(`../../assets/${image.path}.png`)
   return (
-    <li className="bg-secondary border border-black rounded w-75 m-auto text-white">
+    <li className="container-lg bg-secondary border border-black rounded m-auto text-white">
       <h3 className='mt-3'>{url ? <a className='link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover' href={url} target="_blank">{name}</a> : name}</h3>
       <div className="d-flex flex-lg-row flex-column justify-content-around align-items-center">
         <img

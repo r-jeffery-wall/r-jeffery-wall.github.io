@@ -7,7 +7,7 @@ export const SkillsFilter: React.FC = () => {
     const dispatch = useDispatch();
     
     return (
-        <div className="bg-secondary border border-black rounded w-75 m-auto text-white">
+        <div className="container-lg bg-secondary border border-black rounded m-auto text-white">
             <h2>Skills</h2>
             <p>Click on a technology to filter projects.</p>
             <SkillsList filter={true} />

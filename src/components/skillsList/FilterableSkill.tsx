@@ -12,7 +12,7 @@ export const FilterableSkill: React.FC<{
     <li
       key={skill}
       className={
-        'm-2 p-2 col-1 img-hover rounded ' +
+        'm-2 p-2 col-m-1 img-hover rounded ' +
         (filtered ? 'fw-bold' : 'translucent')
       }
       onClick={() => dispatch(updateFilters(skill))}
@@ -20,8 +20,7 @@ export const FilterableSkill: React.FC<{
       <img
         src={image}
         alt={`${skill} logo.`}
-        className="mb-2"
-        style={{ width: '50px', height: '50px' }}
+        className="mb-2 skill-img"
       />
       <p>{skill}</p>
     </li>

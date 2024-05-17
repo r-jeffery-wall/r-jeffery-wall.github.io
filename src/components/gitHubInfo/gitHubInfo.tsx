@@ -33,12 +33,12 @@ export const GitHubInfo: React.FC = () => {
     )
   } else {
     return (
-      <div className="bg-secondary border border-black rounded w-75 m-auto text-white my-3">
+      <div className="container-lg bg-secondary border border-black rounded m-auto text-white my-3">
         <h2>GitHub Stats</h2>
         <figure>
           <img
             id="github-contributions"
-            className="bg-dark-subtle border border-black"
+            className="bg-dark-subtle border border-black img-fluid"
             src="http://ghchart.rshah.org/r-jeffery-wall"
             alt="r-jeffery-wall's Github chart"
           />

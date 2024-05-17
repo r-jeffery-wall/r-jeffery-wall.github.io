@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
   return (
     <Container
       fluid
-      className="bg-body-tertiary sticky-bottom border-secondary border text-center"
+      className="bg-body-tertiary border-secondary border text-center mt-3"
     >
       <ul className='d-flex justify-content-around align-items-center list-unstyled'>
         {socials.map((social: SocialInterface) => (

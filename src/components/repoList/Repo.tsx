@@ -3,7 +3,7 @@ import moment from "moment";
 
 export const Repo: React.FC<RepoInterface> = ({ name, html_url, description, created_at, updated_at }) => {
     return (
-        <div className="bg-secondary border border-black rounded col-sm-5 m-auto">
+        <div className="container-lg bg-secondary border border-black rounded col-lg-5 m-auto">
             <div className="border-bottom border-black text-center">
                 <h3><a className='link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover' href={html_url} target="_blank">{name}</a></h3>
             </div>

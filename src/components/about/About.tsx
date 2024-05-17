@@ -2,10 +2,10 @@ export const About: React.FC = () => {
   return (
     <div
       id="about"
-      className="p-0 m-0 text-center about-section d-flex flex-column justify-content-center align-items-center text-white text-center fw-bold border-top border-bottom border-black border-3"
+      className="p-3 m-0 text-center about-section d-flex flex-column justify-content-center align-items-center text-white text-center fw-bold border-top border-bottom border-black border-3"
     >
       <div
-        className="w-75 border border-secondary rounded p-2"
+        className="container-lg border border-secondary rounded p-2"
         style={{ backgroundColor: 'rgba(199, 199, 199, 0.651)' }}
       >
         <h2 className="mb-5">Hi 👋, I'm Rowan.</h2>
