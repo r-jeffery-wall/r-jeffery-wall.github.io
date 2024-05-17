@@ -28,7 +28,7 @@ export const ReposList: React.FC = () => {
     return (
       <>
         <h2>Public Repos:</h2>
-        <div className="container">
+        <div className="container d-flex flex-wrap gap-5">
           {repos.map((repo) => (
             <Repo
               name={repo.name}
