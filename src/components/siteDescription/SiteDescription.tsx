@@ -5,8 +5,7 @@ export const SiteDescription: React.FC = () => {
       className="p-3 m-0 text-center about-section d-flex flex-column justify-content-center align-items-center text-white text-center fw-bold border-top border-bottom border-black border-3"
     >
       <div
-        className="container-lg border border-secondary rounded p-2"
-        style={{ backgroundColor: 'rgba(199, 199, 199, 0.651)' }}
+        className="container-lg border border-secondary rounded p-2 about-copy-container"
       >
         <h2 className="mb-5">About this Site</h2>
         <p>
