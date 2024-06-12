@@ -15,6 +15,7 @@ const skillsSlice = createSlice({
     'Postgres',
     'Streamlit',
     'Bootstrap',
+    'Express',
     'Bash',
     'Git',
     'Docker',
