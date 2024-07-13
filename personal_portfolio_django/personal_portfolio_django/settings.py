@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest-framework',
-    'corsheaders'
+    'rest_framework',
+    'corsheaders',
+    'data'
 ]
 
 MIDDLEWARE = [
@@ -50,10 +51,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.commonMiddleware'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+MEDIA_ROOT = '/src/assets/'
 
 ROOT_URLCONF = 'personal_portfolio_django.urls'
 
