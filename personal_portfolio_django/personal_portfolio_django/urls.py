@@ -20,5 +20,7 @@ from data import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^api/skills/$', views.get_skills)
+    path('api/skills/', views.get_skills),
+    path('api/socials/', views.get_socials),
+    path('api/projects', views.get_projects)
 ]
