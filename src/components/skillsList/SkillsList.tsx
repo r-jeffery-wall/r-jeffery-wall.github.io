@@ -1,12 +1,19 @@
-import { useSelector } from 'react-redux'
-import { selectSkills } from '../../features/skills/SkillsSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { getSkillsList, selectSkills } from '../../features/skills/SkillsSlice'
 import { Skill } from './Skill'
 import { FilterableSkill } from './FilterableSkill'
 import { selectFilters } from '../../features/projects/projectsSlice'
+import { AppDispatch } from '../../store'
+import { useEffect } from 'react'
 
 export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
+  const dispatch: AppDispatch = useDispatch()
   const skills = useSelector(selectSkills)
   const filters = useSelector(selectFilters)
+
+  useEffect(() => {
+    dispatch(getSkillsList())
+  })
 
   if (filter) {
     return (

@@ -1,29 +1,72 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
+
+interface SkillInterface {
+  id: number
+  name: string
+}
+
+interface SkillsInterface {
+  skillsLoading: boolean
+  skillsLoadFailed: boolean
+  skills: SkillInterface[]
+}
+
+export const getSkillsList = createAsyncThunk(
+  'skills/getSkillsList',
+  async () => {
+    const response = await fetch('http://localhost:8000/api/skills/')
+    const json = await response.json()
+    return json
+  }
+)
+
+const initialState: SkillsInterface = {
+  skillsLoading: false,
+  skillsLoadFailed: false,
+  skills: [],
+}
 
 const skillsSlice = createSlice({
   name: 'skills',
-  initialState: [
-    //Dummy values
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Redux',
-    'HTML',
-    'CSS',
-    'Python',
-    'Postgres',
-    'Streamlit',
-    'Bootstrap',
-    'Express',
-    'Bash',
-    'Git',
-    'Docker',
-    'Kubernetes',
-    'Terraform',
-  ],
+  initialState: initialState,
+  // [
+  //   //Dummy values
+  //   // 'JavaScript',
+  //   // 'TypeScript',
+  //   // 'React',
+  //   // 'Redux',
+  //   // 'HTML',
+  //   // 'CSS',
+  //   // 'Python',
+  //   // 'Postgres',
+  //   // 'Streamlit',
+  //   // 'Bootstrap',
+  //   // 'Express',
+  //   // 'Bash',
+  //   // 'Git',
+  //   // 'Docker',
+  //   // 'Kubernetes',
+  //   // 'Terraform',
+  // ],
   reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(getSkillsList.pending, (state) => {
+      state.skillsLoading = true
+      state.skillsLoadFailed = false
+    })
+    builder.addCase(getSkillsList.fulfilled, (state, action) => {
+      state.skillsLoading = false
+      state.skillsLoadFailed = false
+      state.skills = action.payload
+    })
+    builder.addCase(getSkillsList.rejected, (state) => {
+      state.skillsLoading = false
+      state.skillsLoadFailed = true
+    })
+  },
 })
 
-export const selectSkills = (state: RootState) => state.skills
+export const selectSkills = (state: RootState) =>
+  state.skills.skills.map((skill) => skill.name)
 export default skillsSlice.reducer
