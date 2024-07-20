@@ -36,9 +36,13 @@ export const ProjectsList: React.FC = () => {
   }, [])
 
   if (loading) {
-    return <h1>Projects Loading...</h1>
+    return <h1 className="text-info">Projects Loading...</h1>
   } else if (loadFailed) {
-    return <h1>Projects failed to load. Please refresh the page!</h1>
+    return (
+      <h1 className="text-danger">
+        Projects failed to load. Please refresh the page!
+      </h1>
+    )
   } else {
     return (
       <ul className="d-flex flex-column justify-content-between align-items-center list-unstyled gap-4 my-4">

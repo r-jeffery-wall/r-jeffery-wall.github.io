@@ -23,9 +23,13 @@ export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
   }, [])
 
   if (loading) {
-    return <h2>Skills loading!</h2>
+    return <h2 className="text-info">Skills loading!</h2>
   } else if (loadFailed) {
-    return <h2>Failed to load skills. Please refresh the page.</h2>
+    return (
+      <h2 className="text-danger">
+        Failed to load skills. Please refresh the page.
+      </h2>
+    )
   } else if (filter) {
     return (
       <ul

@@ -21,13 +21,13 @@ export const GitHubInfo: React.FC = () => {
 
   if (profileLoading) {
     return (
-      <div className="bg-secondary border border-black rounded w-75 m-auto text-white">
+      <div className="bg-secondary border border-black rounded w-75 m-auto text-info">
         <h1>Profile Loading!</h1>
       </div>
     )
   } else if (profileLoadFailed) {
     return (
-      <div className="bg-secondary border border-black rounded w-75 m-auto text-white">
+      <div className="bg-secondary border border-black rounded w-75 m-auto text-danger">
         <h1>Profile Load Failed!</h1>
       </div>
     )
