@@ -30,25 +30,6 @@ const initialState: SkillsInterface = {
 const skillsSlice = createSlice({
   name: 'skills',
   initialState: initialState,
-  // [
-  //   //Dummy values
-  //   // 'JavaScript',
-  //   // 'TypeScript',
-  //   // 'React',
-  //   // 'Redux',
-  //   // 'HTML',
-  //   // 'CSS',
-  //   // 'Python',
-  //   // 'Postgres',
-  //   // 'Streamlit',
-  //   // 'Bootstrap',
-  //   // 'Express',
-  //   // 'Bash',
-  //   // 'Git',
-  //   // 'Docker',
-  //   // 'Kubernetes',
-  //   // 'Terraform',
-  // ],
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getSkillsList.pending, (state) => {
@@ -69,4 +50,8 @@ const skillsSlice = createSlice({
 
 export const selectSkills = (state: RootState) =>
   state.skills.skills.map((skill) => skill.name)
+export const selectSkillsLoading = (state: RootState) =>
+  state.skills.skillsLoading
+export const selectSkillsLoadFailed = (state: RootState) =>
+  state.skills.skillsLoadFailed
 export default skillsSlice.reducer

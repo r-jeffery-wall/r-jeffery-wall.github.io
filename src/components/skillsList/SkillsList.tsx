@@ -1,5 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { getSkillsList, selectSkills } from '../../features/skills/SkillsSlice'
+import {
+  getSkillsList,
+  selectSkills,
+  selectSkillsLoadFailed,
+  selectSkillsLoading,
+} from '../../features/skills/SkillsSlice'
 import { Skill } from './Skill'
 import { FilterableSkill } from './FilterableSkill'
 import { selectFilters } from '../../features/projects/projectsSlice'
@@ -10,12 +15,18 @@ export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
   const dispatch: AppDispatch = useDispatch()
   const skills = useSelector(selectSkills)
   const filters = useSelector(selectFilters)
+  const loading = useSelector(selectSkillsLoading)
+  const loadFailed = useSelector(selectSkillsLoadFailed)
 
   useEffect(() => {
     dispatch(getSkillsList())
   })
 
-  if (filter) {
+  if (loading) {
+    return <h2>Skills loading!</h2>
+  } else if (loadFailed) {
+    return <h2>Failed to load skills. Please refresh the page.</h2>
+  } else if (filter) {
     return (
       <ul
         className="d-flex justify-content-between align-items-center list-unstyled flex-wrap"
