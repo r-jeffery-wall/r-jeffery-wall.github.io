@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/skills/', views.get_skills),
     path('api/socials/', views.get_socials),
-    path('api/projects', views.get_projects)
+    path('api/projects/', views.get_projects)
 ]

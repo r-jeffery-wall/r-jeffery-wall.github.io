@@ -20,7 +20,7 @@ export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
 
   useEffect(() => {
     dispatch(getSkillsList())
-  })
+  }, [])
 
   if (loading) {
     return <h2>Skills loading!</h2>
