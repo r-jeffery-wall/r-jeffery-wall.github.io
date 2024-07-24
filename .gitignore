@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/*/node_modules
 /.pnp
 .pnp.js
 
@@ -162,3 +163,4 @@ GitHub.sublime-settings
 .history
 
 pyrightconfig.json
+.vercel

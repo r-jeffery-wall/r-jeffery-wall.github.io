@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.694eb98a.css",
+    "main.js": "/static/js/main.00fa5d43.js",
+    "static/media/AboutBackground.JPG": "/static/media/AboutBackground.5b0e56b42fecd1ee2145.JPG",
+    "static/media/SiteDescription.JPG": "/static/media/SiteDescription.11725d1d6a8da7313beb.JPG",
+    "static/media/banner_image.jpg": "/static/media/banner_image.eb3d03545fe116be7af7.jpg",
+    "static/media/London.JPG": "/static/media/London.391345262a68302f90de.JPG",
+    "static/media/transport_dashboard.png": "/static/media/transport_dashboard.70d3dba183ecf845dd1d.png",
+    "static/media/jamming.png": "/static/media/jamming.a892637be8ac926901ca.png",
+    "static/media/MarkdownGenerator.png": "/static/media/MarkdownGenerator.c5266c7cf87071f56955.png",
+    "static/media/Screenshot 2023-12-12 202318.png": "/static/media/Screenshot 2023-12-12 202318.fe5bf0e1ae182da4391d.png",
+    "static/media/BMICalc.png": "/static/media/BMICalc.3afeda10e540410d397d.png",
+    "static/media/ReadOnlyReddit.png": "/static/media/ReadOnlyReddit.9cef0c542d5e902a964f.png",
+    "static/media/profileIcon.jpeg": "/static/media/profileIcon.bfd43019a94d9604b813.jpeg",
+    "static/media/SQLApp.png": "/static/media/SQLApp.cf66100694ae27121d5a.png",
+    "static/media/mismatched_quotes.png": "/static/media/mismatched_quotes.503f565328768c93b51d.png",
+    "static/media/Flashcards.png": "/static/media/Flashcards.21ee7fcddc4874cbd61a.png",
+    "static/media/ReactCalculator.png": "/static/media/ReactCalculator.3c0f120fe0073e64e68e.png",
+    "index.html": "/index.html",
+    "main.694eb98a.css.map": "/static/css/main.694eb98a.css.map",
+    "main.00fa5d43.js.map": "/static/js/main.00fa5d43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.694eb98a.css",
+    "static/js/main.00fa5d43.js"
+  ]
+}
