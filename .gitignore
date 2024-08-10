@@ -164,3 +164,5 @@ GitHub.sublime-settings
 
 pyrightconfig.json
 .vercel
+
+api/prod.env

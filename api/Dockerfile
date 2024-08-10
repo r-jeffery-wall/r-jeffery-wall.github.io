@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR .
 
 COPY . .
+COPY ./prod.env ./.env
 
 RUN pip install -r requirements.txt
 
