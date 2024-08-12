@@ -1,15 +1,22 @@
 services:
   api:
-    build: ./api
-    ports:
-      - '8000:8000'
-    volumes:
-      - ./api:/api
-    command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    image: rowjw/personal-portfolio-backend:latest
+    container_name: portfolio-backend
+    networks:
+      - caddy
+    labels:
+      caddy: api.rowanjefferywall.com
+      caddy.reverse_proxy: '{{upstreams 8000}}'
 
   web:
-    build: ./frontend
-    ports:
-      - '3000:3000'
-    volumes:
-      - ./frontend:/frontend
+    image: rowjw/personal-portfolio-frontend:latest
+    container_name: portfolio-frontend
+    networks:
+      - caddy
+    labels:
+      caddy: rowanjefferywall.com
+      caddy.reverse_proxy: '{{upstreams 3000}}'
+
+networks:
+  caddy:
+    external: true

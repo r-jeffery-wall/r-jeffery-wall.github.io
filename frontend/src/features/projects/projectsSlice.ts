@@ -22,7 +22,9 @@ export interface ProjectInterface {
 export const getProjectList = createAsyncThunk(
   'projects/getProjectsList',
   async () => {
-    const response = await fetch('http://localhost:8000/api/projects/')
+    const response = await fetch(
+      'https://api.rowanjefferywall.com/api/projects/'
+    )
     const json = await response.json()
     return json.map(
       (project: {

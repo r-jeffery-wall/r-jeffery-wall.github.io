@@ -16,7 +16,9 @@ export interface SocialInterface {
 export const getSocialsList = createAsyncThunk(
   'socials/getSocialsList',
   async () => {
-    const response = await fetch('http://localhost:8000/api/socials/')
+    const response = await fetch(
+      'https://api.rowanjefferywall.com/api/socials/'
+    )
     const json = await response.json()
     return json
   }

@@ -15,7 +15,7 @@ interface SkillsInterface {
 export const getSkillsList = createAsyncThunk(
   'skills/getSkillsList',
   async () => {
-    const response = await fetch('http://localhost:8000/api/skills/')
+    const response = await fetch('https://api.rowanjefferywall.com/api/skills/')
     const json = await response.json()
     return json
   }
