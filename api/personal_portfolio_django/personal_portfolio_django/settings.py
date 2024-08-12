@@ -30,8 +30,29 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if os.environ["ENV"] == 'DEV' else False
 
-ALLOWED_HOSTS = [os.environ["HOST"]]
+ALLOWED_HOSTS = os.environ["HOSTS"].split(', ')
 
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True
+
+# LOGGING = {
+#    'version': 1,
+#    'disable_existing_loggers': False,
+#    'handlers': {
+#       'file': {
+#          'level': 'DEBUG',
+#          'class': 'logging.FileHandler',
+#          'filename': '/tmp/debug.log',
+#       },
+#    },
+#    'loggers': {
+#       'django': {
+#          'handlers': ['file'],
+#          'level': 'DEBUG',
+#          'propagate': True,
+#       },
+#    },
+# }
 
 # Application definition
 
