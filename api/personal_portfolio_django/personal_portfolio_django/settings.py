@@ -31,9 +31,14 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = True if os.environ["ENV"] == 'DEV' else False
 
 ALLOWED_HOSTS = os.environ["HOSTS"].split(', ')
+CSRF_TRUSTED_ORIGINS = ['https://api.rowanjefferywall.com']
 
 USE_X_FORWARDED_HOST = True
 USE_X_FORWARDED_PORT = True
+
+PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_URL = '/static/'
 
 # LOGGING = {
 #    'version': 1,
@@ -81,7 +86,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-MEDIA_ROOT = '/src/assets/'
+MEDIA_ROOT = './src/assets/'
 
 ROOT_URLCONF = 'personal_portfolio_django.urls'
 
