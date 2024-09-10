@@ -1,5 +1,6 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
+import { host } from '../host'
 
 interface ProjectsState {
   projectsLoading: boolean
@@ -23,7 +24,7 @@ export const getProjectList = createAsyncThunk(
   'projects/getProjectsList',
   async () => {
     const response = await fetch(
-      'https://api.rowanjefferywall.com/api/projects/'
+      `${host}/api/projects/`
     )
     const json = await response.json()
     return json.map(

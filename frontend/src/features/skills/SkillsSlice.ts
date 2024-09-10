@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
+import { host } from '../host'
 
 interface SkillInterface {
   id: number
@@ -15,7 +16,7 @@ interface SkillsInterface {
 export const getSkillsList = createAsyncThunk(
   'skills/getSkillsList',
   async () => {
-    const response = await fetch('https://api.rowanjefferywall.com/api/skills/')
+    const response = await fetch(`${host}/api/skills/`)
     const json = await response.json()
     return json
   }

@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
+import { host } from '../host'
 
 interface SocialsState {
   socialsLoading: boolean
@@ -17,7 +18,7 @@ export const getSocialsList = createAsyncThunk(
   'socials/getSocialsList',
   async () => {
     const response = await fetch(
-      'https://api.rowanjefferywall.com/api/socials/'
+      `${host}/api/socials/`
     )
     const json = await response.json()
     return json
