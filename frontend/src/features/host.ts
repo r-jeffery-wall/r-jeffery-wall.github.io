@@ -1,3 +1,3 @@
-import { env } from 'process'
+import json from './settings.json'
 
-export const host = env.prod ? 'https://api.rowanjefferywall.com' : 'localhost:8000'
+export const host = json.prod ? 'https://api.rowanjefferywall.com' : 'http://localhost:8000'
