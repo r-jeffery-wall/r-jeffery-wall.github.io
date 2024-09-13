@@ -27,3 +27,4 @@ stats
 Dockerfile
 venv
 src/assets/
+personal_portfolio_django/db.sqlite3
