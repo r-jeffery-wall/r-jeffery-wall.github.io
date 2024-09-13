@@ -166,3 +166,4 @@ pyrightconfig.json
 .vercel
 
 api/prod.env
+api/src/assets/
