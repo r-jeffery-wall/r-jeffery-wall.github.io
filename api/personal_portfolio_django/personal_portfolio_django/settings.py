@@ -112,13 +112,24 @@ WSGI_APPLICATION = 'personal_portfolio_django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
+dev_db = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db' / 'db.sqlite3',
     }
 }
 
+prod_db = {
+    'default': {
+        "ENGINE": 'django.db.backends.postgresql',
+        "NAME": os.environ.get('SQL_DATABASE'),
+        "USER": os.environ.get('SQL_USER'),
+        "PASSWORD": os.environ.get('SQL_PASSWORD'),
+        "HOST": os.environ.get('SQL_HOST'),
+        "PORT": os.environ.get('SQL_PORT')
+    }
+}
+DATABASES = dev_db if os.environ.get('ENV') == 'DEV' else prod_db
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
