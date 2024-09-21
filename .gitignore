@@ -166,4 +166,4 @@ pyrightconfig.json
 .vercel
 
 api/personal_portfolio_django/prod.env
-api/src/assets/
+api/personal_portfolio_django/src/assets/
