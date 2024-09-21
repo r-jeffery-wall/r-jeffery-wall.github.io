@@ -165,5 +165,5 @@ GitHub.sublime-settings
 pyrightconfig.json
 .vercel
 
-api/prod.env
+api/personal_portfolio_django/prod.env
 api/src/assets/
