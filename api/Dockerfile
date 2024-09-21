@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
-CMD ["python", "personal_portfolio_django/manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["sh", "./entrypoint.sh"]
