@@ -12,6 +12,7 @@ services:
   backend:
     volumes:
       - static:/static
+      - media:/media
     build:
       context: ./api/personal_portfolio_django
     ports:
@@ -20,13 +21,14 @@ services:
     build:
       context: ./frontend
     volumes:
-      - frontend:/app/build
+      - frontend:/frontend/build
   nginx:
     build:
       context: ./nginx
     volumes:
       - static:/static
       - frontend:/var/www/frontend
+      - media:/var/www/frontend/media
     ports:
       - "80:80"
     depends_on:
@@ -36,3 +38,4 @@ volumes:
     static:
     frontend:
     postgres_data:
+    media:
