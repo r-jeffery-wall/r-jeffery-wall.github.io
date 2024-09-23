@@ -86,7 +86,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-MEDIA_ROOT = 'src/assets/'
+MEDIA_ROOT = 'assets/'
 MEDIA_URL = 'media/'
 
 ROOT_URLCONF = 'personal_portfolio_django.urls'
