@@ -29,7 +29,7 @@ services:
     volumes:
       - static:/static
       - frontend:/var/www/frontend
-      - media:/var/www/frontend/media
+      - media:/media
     ports:
       - "80:80"
     depends_on:
