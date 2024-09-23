@@ -5,6 +5,7 @@ services:
     image: postgres:12.20-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    hostname: db
     ports:
       - "5432:5432"
     env_file:
