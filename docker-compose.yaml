@@ -24,17 +24,26 @@ services:
     volumes:
       - frontend:/frontend/build
   nginx:
-    build:
-      context: ./nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
     volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/letsencrypt/:rw
       - static:/static
       - frontend:/var/www/frontend
       - media:/media
-    ports:
-      - "80:80"
     depends_on:
       - backend
       - frontend
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
 volumes:
     static:
     frontend:
