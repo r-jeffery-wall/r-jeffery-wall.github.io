@@ -21,7 +21,7 @@ from django.conf import settings
 from data import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('api/admin/', admin.site.urls),
     path('api/skills/', views.get_skills),
     path('api/socials/', views.get_socials),
     path('api/projects/', views.get_projects)
