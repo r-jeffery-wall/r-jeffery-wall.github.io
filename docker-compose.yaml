@@ -16,6 +16,7 @@ services:
       - media:/app/personal_portfolio_django/media
     build:
       context: ./api/personal_portfolio_django
+    hostname: backend
     ports:
       - "8000:8000"
   frontend:
