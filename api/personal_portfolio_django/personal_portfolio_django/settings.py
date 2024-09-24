@@ -40,24 +40,24 @@ PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 
-# LOGGING = {
-#    'version': 1,
-#    'disable_existing_loggers': False,
-#    'handlers': {
-#       'file': {
-#          'level': 'DEBUG',
-#          'class': 'logging.FileHandler',
-#          'filename': '/tmp/debug.log',
-#       },
-#    },
-#    'loggers': {
-#       'django': {
-#          'handlers': ['file'],
-#          'level': 'DEBUG',
-#          'propagate': True,
-#       },
-#    },
-# }
+LOGGING = {
+   'version': 1,
+   'disable_existing_loggers': False,
+   'handlers': {
+      'file': {
+         'level': 'DEBUG',
+         'class': 'logging.FileHandler',
+         'filename': '/tmp/debug.log',
+      },
+   },
+   'loggers': {
+      'django': {
+         'handlers': ['file'],
+         'level': 'DEBUG',
+         'propagate': True,
+      },
+   },
+}
 
 # Application definition
 
