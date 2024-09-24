@@ -31,7 +31,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = True if os.environ["ENV"] == 'DEV' else False
 
 ALLOWED_HOSTS = os.environ["HOSTS"].split(', ')
-CSRF_TRUSTED_ORIGINS = ['https://api.rowanjefferywall.com', 'http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = ['https://www.rowanjefferywall.com', 'http://localhost:8000']
 
 USE_X_FORWARDED_HOST = True
 USE_X_FORWARDED_PORT = True
