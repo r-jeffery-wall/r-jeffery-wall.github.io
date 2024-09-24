@@ -167,3 +167,5 @@ pyrightconfig.json
 
 api/personal_portfolio_django/prod.env
 api/personal_portfolio_django/src/assets/
+certbot/conf/*
+certbot/www/*
