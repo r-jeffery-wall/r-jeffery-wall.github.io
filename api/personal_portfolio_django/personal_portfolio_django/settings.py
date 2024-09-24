@@ -86,7 +86,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-MEDIA_ROOT = 'assets/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/api/media/'
 
 ROOT_URLCONF = 'personal_portfolio_django.urls'

@@ -26,5 +26,6 @@ web/static/CACHE
 stats
 Dockerfile
 venv
-src/assets/
 personal_portfolio_django/db.sqlite3
+personal_portfolio_django/static/*
+personal_portfolio_django/media/*
