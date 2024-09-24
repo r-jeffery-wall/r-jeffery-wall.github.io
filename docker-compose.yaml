@@ -17,8 +17,8 @@ services:
     build:
       context: ./api/personal_portfolio_django
     hostname: backend
-    ports:
-      - "8000:8000"
+    expose:
+      - 8000
   frontend:
     build:
       context: ./frontend
