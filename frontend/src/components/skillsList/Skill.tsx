@@ -1,5 +1,4 @@
-export const Skill: React.FC<{ skill: string }> = ({ skill }) => {
-  const image = require(`../../assets/${skill}.png`)
+export const Skill: React.FC<{ skill: string, image: string }> = ({ skill, image }) => {
 
   return (
     <li key={skill} className="m-2 p-2 img-hover rounded">

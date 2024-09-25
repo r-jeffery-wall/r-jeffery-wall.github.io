@@ -3,6 +3,7 @@ import { updateFilters } from '../../features/projects/projectsSlice'
 
 export const FilterableSkill: React.FC<{
   skill: string
+  image: string
   filtered: boolean
 }> = ({ skill, filtered }) => {
   const dispatch = useDispatch()

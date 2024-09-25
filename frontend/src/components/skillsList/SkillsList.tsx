@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import {
+  SkillInterface,
   getSkillsList,
   selectSkills,
   selectSkillsLoadFailed,
@@ -13,7 +14,7 @@ import { useEffect } from 'react'
 
 export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
   const dispatch: AppDispatch = useDispatch()
-  const skills = useSelector(selectSkills)
+  const skills:SkillInterface[] = useSelector(selectSkills)
   const filters = useSelector(selectFilters)
   const loading = useSelector(selectSkillsLoading)
   const loadFailed = useSelector(selectSkillsLoadFailed)
@@ -38,9 +39,10 @@ export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
       >
         {skills.map((skill) => (
           <FilterableSkill
-            skill={skill}
+            skill={skill.name}
+            image={skill.image}
             filtered={
-              filters.includes(skill) || filters.length == 0 ? true : false
+              filters.includes(skill.name) || filters.length == 0 ? true : false
             }
           />
         ))}
@@ -53,7 +55,7 @@ export const SkillsList: React.FC<{ filter: boolean }> = ({ filter }) => {
         id="skills-list"
       >
         {skills.map((skill) => (
-          <Skill skill={skill} />
+          <Skill skill={skill.name} image={skill.image} />
         ))}
       </ul>
     )

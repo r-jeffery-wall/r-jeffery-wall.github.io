@@ -2,9 +2,10 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
 import { host } from '../host'
 
-interface SkillInterface {
+export interface SkillInterface {
   id: number
   name: string
+  image: string
 }
 
 interface SkillsInterface {
@@ -50,7 +51,7 @@ const skillsSlice = createSlice({
 })
 
 export const selectSkills = (state: RootState) =>
-  state.skills.skills.map((skill) => skill.name)
+  state.skills.skills
 export const selectSkillsLoading = (state: RootState) =>
   state.skills.skillsLoading
 export const selectSkillsLoadFailed = (state: RootState) =>
