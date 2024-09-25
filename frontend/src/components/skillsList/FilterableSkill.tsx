@@ -5,9 +5,8 @@ export const FilterableSkill: React.FC<{
   skill: string
   image: string
   filtered: boolean
-}> = ({ skill, filtered }) => {
+}> = ({ skill, image, filtered }) => {
   const dispatch = useDispatch()
-  const image = require(`../../assets/${skill}.png`)
 
   return (
     <li
