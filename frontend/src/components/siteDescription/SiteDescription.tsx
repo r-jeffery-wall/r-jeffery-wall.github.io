@@ -14,9 +14,8 @@ export const SiteDescription: React.FC = () => {
         </p>
         <p>
           The current iteration of this site is built using React 18, Redux, and
-          React-Router. The site has a Django backend that serves data for the
-          skills, projects, and socials that are displayed on the site. I also
-          pull data from the GitHub API. .
+          React-Router. All content is served statically from a config file, and
+          I also pull data from the GitHub API.
         </p>
         <p>
           This site is the first project that I have used TypeScript for. I have

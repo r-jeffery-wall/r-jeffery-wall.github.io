@@ -1,0 +1,63 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "React",
+      "image": "/assets/skills/react.png"
+    },
+    {
+      "id": 2,
+      "name": "TypeScript",
+      "image": "/assets/skills/typescript.png"
+    },
+    {
+      "id": 3,
+      "name": "Python",
+      "image": "/assets/skills/python.png"
+    },
+    {
+      "id": 4,
+      "name": "Django",
+      "image": "/assets/skills/django.png"
+    },
+    {
+      "id": 5,
+      "name": "Node.js",
+      "image": "/assets/skills/node.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portfolio Site",
+      "url": "https://r-jeffery-wall.github.io",
+      "description": "A personal portfolio site built with React and TypeScript to showcase skills and projects.",
+      "image": {
+        "path": "/assets/projects/portfolio.png",
+        "alt": "Portfolio site screenshot"
+      },
+      "skills": ["React", "TypeScript", "Redux"]
+    },
+    {
+      "name": "Example Project",
+      "url": "https://github.com/r-jeffery-wall/example",
+      "description": "An example project to demonstrate full-stack development capabilities.",
+      "image": {
+        "path": "/assets/projects/example.png",
+        "alt": "Example project screenshot"
+      },
+      "skills": ["Python", "Django", "React"]
+    }
+  ],
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/r-jeffery-wall",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/r-jeffery-wall",
+      "icon": "linkedin"
+    }
+  ]
+}

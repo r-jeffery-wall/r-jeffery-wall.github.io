@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../../store'
-import { host } from '../host'
+import config from '../config.json'
 
 interface SocialsState {
   socialsLoading: boolean
@@ -17,11 +17,7 @@ export interface SocialInterface {
 export const getSocialsList = createAsyncThunk(
   'socials/getSocialsList',
   async () => {
-    const response = await fetch(
-      `${host}/api/socials/`
-    )
-    const json = await response.json()
-    return json
+    return config.socials
   }
 )
 
