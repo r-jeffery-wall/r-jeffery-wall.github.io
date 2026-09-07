@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Rowan Jeffery-Wall",
+  "name": "Rowan Jeffery-Wall Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,17 +9,17 @@
     },
     {
       "src": "logo192.jpg",
-      "type": "image/png",
+      "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
       "src": "logo512.jpg",
-      "type": "image/png",
+      "type": "image/jpeg",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#242424",
+  "background_color": "#242424"
 }

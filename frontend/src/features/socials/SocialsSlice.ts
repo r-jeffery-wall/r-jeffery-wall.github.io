@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { RootState } from '../../store'
+import type { RootState } from '../../store'
 import config from '../config.json'
 
 interface SocialsState {

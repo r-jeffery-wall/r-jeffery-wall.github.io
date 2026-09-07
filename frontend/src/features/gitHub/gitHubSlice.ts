@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { RootState } from '../../store'
+import type { RootState } from '../../store'
 
 export const getProfileInfo = createAsyncThunk(
   'gitHub/getProfileInfo',
@@ -41,7 +41,7 @@ export interface RepoInterface {
 
 interface ProfileInterface {
   login: string
-  id: Number
+  id: number
   node_id: string
   avatar_url: string
   gravatar_id: string
@@ -58,20 +58,20 @@ interface ProfileInterface {
   received_events_url: string
   type: string
   site_admin: boolean
-  name: any
-  company: any
-  blog: any
-  location: any
-  email: any
-  hireable: any
-  bio: any
-  twitter_username: any
-  public_repos: Number
-  public_gists: Number
-  followers: Number
-  following: Number
-  created_at: any
-  updated_at: any
+  name: string | null
+  company: string | null
+  blog: string | null
+  location: string | null
+  email: string | null
+  hireable: boolean | null
+  bio: string | null
+  twitter_username: string | null
+  public_repos: number
+  public_gists: number
+  followers: number
+  following: number
+  created_at: string
+  updated_at: string
 }
 
 const initialState: GitHubInterface = {
@@ -103,7 +103,7 @@ const initialState: GitHubInterface = {
     blog: '',
     location: '',
     email: '',
-    hireable: '',
+    hireable: null,
     bio: '',
     twitter_username: '',
     public_repos: 0,

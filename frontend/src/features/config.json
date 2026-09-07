@@ -3,27 +3,27 @@
     {
       "id": 1,
       "name": "React",
-      "image": "/assets/skills/react.png"
+      "image": "/assets/skills/react.svg"
     },
     {
       "id": 2,
       "name": "TypeScript",
-      "image": "/assets/skills/typescript.png"
+      "image": "/assets/skills/typescript.svg"
     },
     {
       "id": 3,
       "name": "Python",
-      "image": "/assets/skills/python.png"
+      "image": "/assets/skills/python.svg"
     },
     {
       "id": 4,
       "name": "Django",
-      "image": "/assets/skills/django.png"
+      "image": "/assets/skills/django.svg"
     },
     {
       "id": 5,
       "name": "Node.js",
-      "image": "/assets/skills/node.png"
+      "image": "/assets/skills/node.svg"
     }
   ],
   "projects": [
@@ -32,7 +32,7 @@
       "url": "https://r-jeffery-wall.github.io",
       "description": "A personal portfolio site built with React and TypeScript to showcase skills and projects.",
       "image": {
-        "path": "/assets/projects/portfolio.png",
+        "path": "/assets/projects/portfolio.svg",
         "alt": "Portfolio site screenshot"
       },
       "skills": ["React", "TypeScript", "Redux"]
@@ -42,7 +42,7 @@
       "url": "https://github.com/r-jeffery-wall/example",
       "description": "An example project to demonstrate full-stack development capabilities.",
       "image": {
-        "path": "/assets/projects/example.png",
+        "path": "/assets/projects/example.svg",
         "alt": "Example project screenshot"
       },
       "skills": ["Python", "Django", "React"]

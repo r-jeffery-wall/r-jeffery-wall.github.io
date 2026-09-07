@@ -1,12 +1,13 @@
-import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { RootState } from '../../store'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import type { PayloadAction } from '@reduxjs/toolkit'
+import type { RootState } from '../../store'
 import config from '../config.json'
 
 interface ProjectsState {
   projectsLoading: boolean
   projectsLoadFailed: boolean
   projectsList: ProjectInterface[]
-  filterList: String[]
+  filterList: string[]
 }
 
 export interface ProjectInterface {
