@@ -3,27 +3,42 @@
     {
       "id": 1,
       "name": "React",
-      "image": "/assets/skills/react.svg"
+      "image": "/assets/skills/react.png"
     },
     {
       "id": 2,
       "name": "TypeScript",
-      "image": "/assets/skills/typescript.svg"
+      "image": "/assets/skills/typescript.png"
     },
     {
       "id": 3,
       "name": "Python",
-      "image": "/assets/skills/python.svg"
+      "image": "/assets/skills/python.png"
     },
     {
       "id": 4,
-      "name": "Django",
-      "image": "/assets/skills/django.svg"
+      "name": "Linux",
+      "image": "/assets/skills/linux.png"
     },
     {
       "id": 5,
-      "name": "Node.js",
-      "image": "/assets/skills/node.svg"
+      "name": "Claude",
+      "image": "/assets/skills/anthropic.png"
+    },
+    {
+      "id": 6,
+      "name": "HTTP APIs",
+      "image": "/assets/skills/http.png"
+    },
+    {
+      "id": 7,
+      "name": "Databricks",
+      "image": "/assets/skills/databricks.png"
+    },
+    {
+      "id": 8,
+      "name": "Bash",
+      "image": "/assets/skills/bash.png"
     }
   ],
   "projects": [
@@ -35,7 +50,11 @@
         "path": "/assets/projects/portfolio.svg",
         "alt": "Portfolio site screenshot"
       },
-      "skills": ["React", "TypeScript", "Redux"]
+      "skills": [
+        "React",
+        "TypeScript",
+        "Redux"
+      ]
     },
     {
       "name": "Example Project",
@@ -45,7 +64,11 @@
         "path": "/assets/projects/example.svg",
         "alt": "Example project screenshot"
       },
-      "skills": ["Python", "Django", "React"]
+      "skills": [
+        "Python",
+        "Django",
+        "React"
+      ]
     }
   ],
   "socials": [
