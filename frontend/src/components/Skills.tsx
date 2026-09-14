@@ -20,7 +20,7 @@ export default function Skills() {
   }, [dispatch])
 
   return (
-    <Section title="~/skills.sh" subtitle="Technologies I have used and am learning.">
+    <Section title="~/skills.sh" subtitle="Technologies I am proficient with" >
       {loading ? (
         <p className="text-orange-400">$ loading skills...</p>
       ) : loadFailed ? (
