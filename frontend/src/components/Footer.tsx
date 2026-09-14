@@ -38,7 +38,7 @@ export default function Footer() {
           </ul>
         )}
       </Section>
-      <p className="my-4 text-sm">
+      <p className="my-4 px-8 text-sm">
         Designed and developed by Rowan Jeffery-Wall. Built with{' '}
         <a href="https://react.dev" target="_blank" rel="noreferrer">
           React

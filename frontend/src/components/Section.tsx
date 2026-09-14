@@ -15,7 +15,7 @@ export default function Section({
         <h2 className="font-doto text-ctp-mauve text-4xl">{title}</h2>
         {subtitle ? <h3 className="italic">{subtitle}</h3> : null}
       </div>
-      <div className="my-2 py-2">{children}</div>
+      <div className="my-2 py-2 px-8">{children}</div>
     </section>
   )
 }
