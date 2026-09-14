@@ -30,7 +30,7 @@ export default function Projects() {
           {projects.map((project) => (
             <li
               key={project.name}
-              className="border-2 border-dotted border-orange-400 rounded p-4 mx-auto w-full max-w-3xl"
+              className="border-2 border-dotted border-ctp-peach rounded p-4 mx-auto w-full max-w-3xl"
             >
               <h3 className="text-2xl">
                 {project.url ? (
@@ -45,7 +45,7 @@ export default function Projects() {
                 <img
                   src={project.image.path}
                   alt={project.image.alt}
-                  className="w-48 rounded border-2 border-dotted border-orange-400"
+                  className="w-48 rounded border-2 border-dotted border-ctp-peach"
                 />
                 <p className="md:w-1/2">{project.description}</p>
               </div>

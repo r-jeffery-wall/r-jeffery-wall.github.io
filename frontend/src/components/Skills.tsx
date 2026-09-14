@@ -30,7 +30,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <li
               key={skill.id}
-              className="m-2 p-2 border-2 border-dotted border-orange-400 rounded"
+              className="m-2 p-2 border-2 border-dotted border-ctp-peach rounded"
             >
               <img
                 src={skill.image}

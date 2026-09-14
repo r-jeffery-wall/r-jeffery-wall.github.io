@@ -20,7 +20,7 @@ export default function Footer() {
   }, [dispatch])
 
   return (
-    <footer className="my-6 border-t-4 border-dotted border-orange-400 pt-4">
+    <footer className="my-6 border-t-4 border-dotted border-ctp-peach pt-4">
       <Section title="~/socials.sh" subtitle="Find me elsewhere on the internet.">
         {loading ? (
           <p className="text-orange-400">$ loading socials...</p>

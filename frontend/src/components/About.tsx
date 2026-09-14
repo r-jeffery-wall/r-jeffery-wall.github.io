@@ -17,7 +17,7 @@ export default function About() {
       <p>
         I would describe myself as a technology generalist. I am also interested in self-built microcomputing projects using things like Raspberry Pi and ESP32. I also enjoy working on game development in the Godot engine. Outside of the world of technology I am interested in classic cinema, and I currently work on A/V for screenings.
       </p>
-      <p className="font-doto text-orange-400 text-2xl font-bold">
+      <p className="font-doto text-ctp-mauve text-2xl font-bold">
         ~/location.sh: London, United Kingdom
       </p>
     </Section>

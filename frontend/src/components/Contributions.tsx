@@ -45,7 +45,7 @@ export default function Contributions() {
             <img
               src={profile.avatar_url}
               alt="GitHub profile picture"
-              className="rounded-full border-2 border-dotted border-orange-400 w-16 h-16"
+              className="rounded-full border-2 border-dotted border-ctp-peach w-16 h-16"
             />
             <h4>
               <a href={profile.html_url} target="_blank" rel="noreferrer">
@@ -69,9 +69,9 @@ export default function Contributions() {
           {repos.map((repo) => (
             <li
               key={repo.full_name}
-              className="border-2 border-dotted border-orange-400 rounded p-4 w-full md:w-2/5"
+              className="border-2 border-dotted border-ctp-peach rounded p-4 w-full md:w-2/5"
             >
-              <h4 className="border-b border-dotted border-orange-400 pb-2">
+              <h4 className="border-b border-dotted border-ctp-peach pb-2">
                 <a href={repo.html_url} target="_blank" rel="noreferrer">
                   {repo.name}
                 </a>
