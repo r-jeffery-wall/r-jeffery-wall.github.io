@@ -40,16 +40,12 @@ export default function Footer() {
       </Section>
       <p className="my-4 px-8 text-sm">
         Designed and developed by Rowan Jeffery-Wall. Built with{' '}
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          React
-        </a>
-        ,{' '}
-        <a href="https://redux.js.org" target="_blank" rel="noreferrer">
-          Redux
-        </a>
-        , and{' '}
-        <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">
-          Tailwind CSS
+        <a href="https://vite.dev" target="_blank" rel="noreferrer">
+          Vite
+        </a>{' '}
+        . Icons from{' '}
+        <a href="https://icons8.com" target="_blank" rel="noreferrer">
+          Icons8
         </a>
         . Site repo at{' '}
         <a
