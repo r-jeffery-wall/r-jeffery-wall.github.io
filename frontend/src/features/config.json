@@ -39,35 +39,58 @@
       "id": 8,
       "name": "Bash",
       "image": "/assets/skills/bash.png"
+    },
+    {
+      "id": 9,
+      "name": "Proxmox",
+      "image": "/assets/skills/proxmox.png"
+    },
+    {
+      "id": 10,
+      "name": "Docker",
+      "image": "/assets/skills/docker.png"
     }
   ],
   "projects": [
     {
-      "name": "Portfolio Site",
-      "url": "https://r-jeffery-wall.github.io",
-      "description": "A personal portfolio site built with React and TypeScript to showcase skills and projects.",
+      "name": "This Site!",
+      "url": "https://rowanjefferywall.com",
+      "description": "This site is my own creation that I use to showcase skills and projects.",
       "image": {
-        "path": "/assets/projects/portfolio.svg",
+        "path": "/assets/projects/site.png",
         "alt": "Portfolio site screenshot"
       },
       "skills": [
         "React",
         "TypeScript",
-        "Redux"
+        "HTTP APIs"
       ]
     },
     {
-      "name": "Example Project",
-      "url": "https://github.com/r-jeffery-wall/example",
-      "description": "An example project to demonstrate full-stack development capabilities.",
+      "name": "Homelab",
+      "url": "https://proxmox.com/en/",
+      "description": "I maintain my own Proxmox Homelab on my own hardware. This is where I run a lot of my self-hosted services, such as Home Assistant for Home Automation, Immich for photos, and NextCloud for Cloud Storage.",
       "image": {
-        "path": "/assets/projects/example.svg",
-        "alt": "Example project screenshot"
+        "path": "/assets/projects/homelab.png",
+        "alt": "A screenshot showing the Proxmox homelab view."
+      },
+      "skills": [
+        "Proxmox"
+      ]
+    },
+    {
+      "name": "Raspberry Pi Transport Dashboard",
+      "url": "https://github.com/r-jeffery-wall/transport-dashboard-api",
+      "description": "A Rapsberry Pi Zero connected to an e-Ink display is used to show upcoming departures for nearby transport stops. This uses public APIs to get the arrival data. I host the API on my homelab and then the display queries that API every minute to get the dashboard image to be displayed.",
+      "image": {
+        "path": "/assets/projects/transport_dashboard.jpg",
+        "alt": "The dashboard shows upcoming departures for four key London stations."
       },
       "skills": [
         "Python",
-        "Django",
-        "React"
+        "HTTP APIs",
+        "Bash",
+        "Docker"
       ]
     }
   ],
