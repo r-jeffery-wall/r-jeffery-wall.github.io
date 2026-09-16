@@ -15,6 +15,9 @@ export default function About() {
         Alongisde all this I have a deep interest in self-hosting my own projects. This has helped me to learn the core concepts of hosting reliable and maintainable infrastructure, and I am working towards self-hosting my own AI agents. I am also a great believer in open source software projects and I am interested to see what innovations will come out of the open source space in the agentic AI sphere.
       </p>
       <p>
+        I am a deep believer in the power of free and open-source software, and I try to use it as much as possible in my own work. I like to build my own bespoke solutions and believe that people can be empowered to have software that benefits them without stealing all their data through open source. I am also deeply interested in the development of open-weight AI models, and how self-hosting AI can help to combat some of the more privacy-negative aspects of the technology.
+      </p>
+      <p>
         I would describe myself as a technology generalist. I am also interested in self-built microcomputing projects using things like Raspberry Pi and ESP32. I also enjoy working on game development in the Godot engine. Outside of the world of technology I am interested in classic cinema, and I currently work on A/V for screenings.
       </p>
       <p className="font-doto text-ctp-mauve text-2xl font-bold">
