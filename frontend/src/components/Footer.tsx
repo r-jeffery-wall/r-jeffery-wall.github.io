@@ -55,7 +55,7 @@ export default function Footer() {
         >
           GitHub
         </a>
-        .
+        . A combination of hand-coding and AI-assisted coding was utilised to build this site,
       </p>
     </footer>
   )
